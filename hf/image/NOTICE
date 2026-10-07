@@ -1,0 +1,7 @@
+Qwen is licensed under the Qwen RESEARCH LICENSE AGREEMENT, Copyright (c) 2026 Hangzhou Tongyi Laboratory Technology Co., Ltd. All Rights Reserved.
+
+Built with Qwen.
+
+Modifications by Superpapotas: lora.safetensors is the trained m10 rank-96 adapter for furniture board drawings. It changes the effective Qwen-Image 2.1 parameters when loaded. The base weights are not included. This file is a fine-tuned derivative, not an upstream checkpoint.
+
+Use, reproduction and distribution are for non-commercial research or evaluation only. Commercial use requires a separate license from Qwen.

@@ -1,0 +1,1077 @@
+{
+  "sources": {
+    "qwen21-m11-r64/selection.json": "eefab9b80767ae0692b4ea88346a8bf45a752943227c2032d8a7a73010428999",
+    "qwen21-m11-steps61015-gold/results.json": "78ed12c67a7f5485be91d53901acb1f5d5c8a5cdff4aae0143965dcd4fb3bd6e",
+    "qwen21-m11-standard28-gold/results.json": "311d679236d66fa0edb49e5ce4ecca94e041185d85804c984b3fd2e7374e0290"
+  },
+  "selection": {
+    "rule": "highest TEST four-seed medoid structural F1; gold/holdout reported only",
+    "results": {
+      "3000-ema": {
+        "test": {
+          "n": 53,
+          "medoid_struct": 0.9136986567817226,
+          "medoid_board": 0.2762325438365987,
+          "seed_struct": [
+            0.8691002293598277,
+            0.8577510943750505,
+            0.8518130548254643,
+            0.8420624993644554
+          ],
+          "untraced_medoid": 1
+        },
+        "gold": {
+          "n": 19,
+          "medoid_struct": 0.9141137156617033,
+          "medoid_board": 0.23945060363824666,
+          "seed_struct": [
+            0.7782725647969252,
+            0.899000706895444,
+            0.8467774263574506,
+            0.8058398357567332
+          ],
+          "untraced_medoid": 0
+        },
+        "holdout": {
+          "n": 12,
+          "medoid_struct": 0.8486322855888074,
+          "medoid_board": 0.17799813490602964,
+          "seed_struct": [
+            0.8538187012403394,
+            0.8280986525551745,
+            0.7678242047807263,
+            0.6966664870504283
+          ],
+          "untraced_medoid": 0
+        }
+      },
+      "2200-ema-r512": {
+        "test": {
+          "n": 53,
+          "medoid_struct": 0.8941510105376616,
+          "medoid_board": 0.24605548245876693,
+          "seed_struct": [
+            0.8375463166793319,
+            0.8283876368627292,
+            0.8253515393866858,
+            0.8124070887327985
+          ],
+          "untraced_medoid": 0
+        },
+        "gold": {
+          "n": 19,
+          "medoid_struct": 0.9411510447046858,
+          "medoid_board": 0.21300107679320307,
+          "seed_struct": [
+            0.8590664301224268,
+            0.7927413301488584,
+            0.8057734848389893,
+            0.8644818255032886
+          ],
+          "untraced_medoid": 0
+        },
+        "holdout": {
+          "n": 12,
+          "medoid_struct": 0.8408881778446996,
+          "medoid_board": 0.189405806182122,
+          "seed_struct": [
+            0.7701814482727217,
+            0.8397939017504236,
+            0.6996357521095152,
+            0.7495882740447959
+          ],
+          "untraced_medoid": 0
+        }
+      },
+      "1430-ema-r512": {
+        "test": {
+          "n": 53,
+          "medoid_struct": 0.8981007327075511,
+          "medoid_board": 0.26991858174688244,
+          "seed_struct": [
+            0.8528882770666686,
+            0.8207729930484492,
+            0.8427937250963152,
+            0.7719442319222753
+          ],
+          "untraced_medoid": 0
+        },
+        "gold": {
+          "n": 19,
+          "medoid_struct": 0.8853801169590644,
+          "medoid_board": 0.27478505401509845,
+          "seed_struct": [
+            0.86902103744209,
+            0.9002923976608187,
+            0.771045440627484,
+            0.7996237680448207
+          ],
+          "untraced_medoid": 0
+        },
+        "holdout": {
+          "n": 12,
+          "medoid_struct": 0.8330339949905169,
+          "medoid_board": 0.09324779752411333,
+          "seed_struct": [
+            0.7570260053955707,
+            0.8198416317981536,
+            0.7322663718091004,
+            0.7760496615569079
+          ],
+          "untraced_medoid": 0
+        }
+      }
+    },
+    "selected": "3000-ema",
+    "m10_1430_ema_reference": {
+      "test": {
+        "n": 53,
+        "medoid_struct": 0.9235430267960724,
+        "medoid_board": 0.27212112396390636,
+        "seed_struct": [
+          0.8128015110153488,
+          0.7889479804712014,
+          0.8199592899043352,
+          0.8229082658949167
+        ],
+        "untraced_medoid": 1
+      },
+      "gold": {
+        "n": 19,
+        "medoid_struct": 0.9225339757982106,
+        "medoid_board": 0.211053225677635,
+        "seed_struct": [
+          0.7348255641367273,
+          0.759874968331869,
+          0.8230580131643531,
+          0.8728927822749335
+        ],
+        "untraced_medoid": 0
+      },
+      "holdout": {
+        "n": 12,
+        "medoid_struct": 0.8092019915073504,
+        "medoid_board": 0.1002613180074614,
+        "seed_struct": [
+          0.7928121797687014,
+          0.7186939701169761,
+          0.7018670138235357,
+          0.6852724972290188
+        ],
+        "untraced_medoid": 0
+      }
+    }
+  },
+  "step_study": {
+    "6": {
+      "medoid_struct": 0.9213516246757245,
+      "medoid_board": 0.25935416370801173,
+      "single_seed_struct_mean": 0.8413002174105972,
+      "seconds_per_image": 4.173171052631579
+    },
+    "10": {
+      "medoid_struct": 0.939264828738513,
+      "medoid_board": 0.252422206107621,
+      "single_seed_struct_mean": 0.8980183251352072,
+      "seconds_per_image": 6.220513157894737
+    },
+    "15": {
+      "medoid_struct": 0.9359407290155213,
+      "medoid_board": 0.23615426352388896,
+      "single_seed_struct_mean": 0.9048945344454232,
+      "seconds_per_image": 8.746026315789472
+    }
+  },
+  "standard_study": {
+    "n": 19,
+    "seed": 0,
+    "arms": {
+      "standard28": {
+        "struct_f1": 0.8142955228827805,
+        "board_f1": 0.21644265229645426,
+        "traced": 17,
+        "seconds_per_image": 11.965894736842106
+      },
+      "turbo6": {
+        "struct_f1": 0.8259680301231547,
+        "board_f1": 0.19699128224218376,
+        "traced": 19,
+        "seconds_per_image": 4.165631578947368
+      },
+      "turbo10": {
+        "struct_f1": 0.9502923976608187,
+        "board_f1": 0.2256945732014984,
+        "traced": 19,
+        "seconds_per_image": 6.279842105263159
+      },
+      "turbo15": {
+        "struct_f1": 0.9587453482190325,
+        "board_f1": 0.208712355586625,
+        "traced": 19,
+        "seconds_per_image": 8.648578947368422
+      }
+    },
+    "caveat": "Same m11 checkpoint, seed0, resolution768, all19 sorted. Standard28 has no Turbo adapter; Turbo6/10/15 use Turbo and custom schedules. This compares runtime inference configurations, not training runs. No medoid, seed selection, case selection, generalization or fabrication claim."
+  },
+  "conditional_common17": {
+    "standard28": 0.9100949961631076,
+    "turbo6": 0.8448125661747953,
+    "turbo10": 0.9620915032679739,
+    "turbo15": 0.9715389185977421
+  },
+  "setup": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "resolution": 768,
+    "base_revision": "d26bb61231c349cf6b7896fa83353113880e1ba3",
+    "turbo_revision": "009a44a895ef85f7e643c80fdca9543795248867",
+    "prompt": "Redraw only the furniture carcass as an orthographic front elevation. Draw each structural board as a solid black bar at its thickness. Preserve stepped tops, partial shelves and dividers. Keep openings white, including compartments covered by opaque doors or drawer fronts. Keep shelves visible through glass. Omit legs, plinths, backs, worktops, fronts, handles, contents, perspective and shading.",
+    "samplers": {
+      "6": [
+        1.0,
+        0.9375,
+        0.875,
+        0.75,
+        0.5,
+        0.25
+      ],
+      "10": [
+        1.0,
+        0.9791666666666666,
+        0.9583333333333334,
+        0.9375,
+        0.9166666666666666,
+        0.8958333333333334,
+        0.875,
+        0.75,
+        0.5,
+        0.25
+      ],
+      "15": [
+        1.0,
+        0.9886363636363636,
+        0.9772727272727273,
+        0.9659090909090909,
+        0.9545454545454546,
+        0.9431818181818182,
+        0.9318181818181819,
+        0.9204545454545454,
+        0.9090909090909091,
+        0.8977272727272727,
+        0.8863636363636364,
+        0.875,
+        0.75,
+        0.5,
+        0.25
+      ]
+    },
+    "scheduler": "Viggle shipped config (shift_terminal=None)",
+    "torch": "2.14.1+cu130",
+    "diffusers": "0.41.0.dev0"
+  },
+  "checkpoint": "m11 rank64 3000-EMA (experimental; not released)",
+  "cases": [
+    {
+      "case": "boxed-centre-photo",
+      "medoid": {
+        "6": {
+          "seed": 1,
+          "struct": 1.0,
+          "board": 0.08695652173913043
+        },
+        "10": {
+          "seed": 3,
+          "struct": 1.0,
+          "board": 0.043478260869565216
+        },
+        "15": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 0.043478260869565216
+        }
+      },
+      "seed0": {
+        "standard28": {
+          "struct_f1": 1.0,
+          "board_f1": 0.0,
+          "traced": true
+        },
+        "turbo6": {
+          "struct_f1": 0.7878787878787877,
+          "board_f1": 0.05405405405405406,
+          "traced": true
+        },
+        "turbo10": {
+          "struct_f1": 0.9714285714285714,
+          "board_f1": 0.04444444444444444,
+          "traced": true
+        },
+        "turbo15": {
+          "struct_f1": 1.0,
+          "board_f1": 0.043478260869565216,
+          "traced": true
+        }
+      }
+    },
+    {
+      "case": "photo-asymmetric-bookcase",
+      "medoid": {
+        "6": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 0.36363636363636365
+        },
+        "10": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 0.36363636363636365
+        },
+        "15": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 0.45454545454545453
+        }
+      },
+      "seed0": {
+        "standard28": {
+          "struct_f1": 1.0,
+          "board_f1": 0.45454545454545453,
+          "traced": true
+        },
+        "turbo6": {
+          "struct_f1": 1.0,
+          "board_f1": 0.36363636363636365,
+          "traced": true
+        },
+        "turbo10": {
+          "struct_f1": 1.0,
+          "board_f1": 0.36363636363636365,
+          "traced": true
+        },
+        "turbo15": {
+          "struct_f1": 1.0,
+          "board_f1": 0.45454545454545453,
+          "traced": true
+        }
+      }
+    },
+    {
+      "case": "photo-bookcase-run",
+      "medoid": {
+        "6": {
+          "seed": 1,
+          "struct": 0.8000000000000002,
+          "board": 0.0
+        },
+        "10": {
+          "seed": 1,
+          "struct": 0.8000000000000002,
+          "board": 0.0
+        },
+        "15": {
+          "seed": 3,
+          "struct": 0.7368421052631577,
+          "board": 0.0
+        }
+      },
+      "seed0": {
+        "standard28": {
+          "struct_f1": 0.6666666666666666,
+          "board_f1": 0.0,
+          "traced": true
+        },
+        "turbo6": {
+          "struct_f1": 0.6666666666666666,
+          "board_f1": 0.0,
+          "traced": true
+        },
+        "turbo10": {
+          "struct_f1": 0.9,
+          "board_f1": 0.0,
+          "traced": true
+        },
+        "turbo15": {
+          "struct_f1": 0.9,
+          "board_f1": 0.0,
+          "traced": true
+        }
+      }
+    },
+    {
+      "case": "photo-built-in-display",
+      "medoid": {
+        "6": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 0.07692307692307691
+        },
+        "10": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 0.07692307692307691
+        },
+        "15": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 0.07692307692307691
+        }
+      },
+      "seed0": {
+        "standard28": {
+          "struct_f1": 1.0,
+          "board_f1": 0.07692307692307691,
+          "traced": true
+        },
+        "turbo6": {
+          "struct_f1": 1.0,
+          "board_f1": 0.07692307692307691,
+          "traced": true
+        },
+        "turbo10": {
+          "struct_f1": 1.0,
+          "board_f1": 0.07692307692307691,
+          "traced": true
+        },
+        "turbo15": {
+          "struct_f1": 1.0,
+          "board_f1": 0.07692307692307691,
+          "traced": true
+        }
+      }
+    },
+    {
+      "case": "photo-staggered-console",
+      "medoid": {
+        "6": {
+          "seed": 0,
+          "struct": 0.888888888888889,
+          "board": 0.0
+        },
+        "10": {
+          "seed": 0,
+          "struct": 0.888888888888889,
+          "board": 0.0
+        },
+        "15": {
+          "seed": 0,
+          "struct": 0.888888888888889,
+          "board": 0.0
+        }
+      },
+      "seed0": {
+        "standard28": {
+          "struct_f1": 0.888888888888889,
+          "board_f1": 0.0,
+          "traced": true
+        },
+        "turbo6": {
+          "struct_f1": 0.888888888888889,
+          "board_f1": 0.0,
+          "traced": true
+        },
+        "turbo10": {
+          "struct_f1": 0.888888888888889,
+          "board_f1": 0.0,
+          "traced": true
+        },
+        "turbo15": {
+          "struct_f1": 0.888888888888889,
+          "board_f1": 0.0,
+          "traced": true
+        }
+      }
+    },
+    {
+      "case": "photo-wall-niche-grid",
+      "medoid": {
+        "6": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 0.08333333333333334
+        },
+        "10": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 0.08333333333333334
+        },
+        "15": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 0.08333333333333334
+        }
+      },
+      "seed0": {
+        "standard28": {
+          "struct_f1": 1.0,
+          "board_f1": 0.07692307692307691,
+          "traced": true
+        },
+        "turbo6": {
+          "struct_f1": 1.0,
+          "board_f1": 0.08333333333333334,
+          "traced": true
+        },
+        "turbo10": {
+          "struct_f1": 1.0,
+          "board_f1": 0.08333333333333334,
+          "traced": true
+        },
+        "turbo15": {
+          "struct_f1": 1.0,
+          "board_f1": 0.08333333333333334,
+          "traced": true
+        }
+      }
+    },
+    {
+      "case": "real-closed011",
+      "medoid": {
+        "6": {
+          "seed": 0,
+          "struct": 0.7000000000000001,
+          "board": 0.09090909090909093
+        },
+        "10": {
+          "seed": 0,
+          "struct": 0.7000000000000001,
+          "board": 0.09090909090909093
+        },
+        "15": {
+          "seed": 0,
+          "struct": 0.7000000000000001,
+          "board": 0.09090909090909093
+        }
+      },
+      "seed0": {
+        "standard28": {
+          "struct_f1": 0.0,
+          "board_f1": 0.0,
+          "traced": false
+        },
+        "turbo6": {
+          "struct_f1": 0.7000000000000001,
+          "board_f1": 0.09090909090909093,
+          "traced": true
+        },
+        "turbo10": {
+          "struct_f1": 0.7000000000000001,
+          "board_f1": 0.09090909090909093,
+          "traced": true
+        },
+        "turbo15": {
+          "struct_f1": 0.7000000000000001,
+          "board_f1": 0.09090909090909093,
+          "traced": true
+        }
+      }
+    },
+    {
+      "case": "real-closed021",
+      "medoid": {
+        "6": {
+          "seed": 0,
+          "struct": 0.5263157894736842,
+          "board": 0.08695652173913043
+        },
+        "10": {
+          "seed": 1,
+          "struct": 0.8000000000000002,
+          "board": 0.07692307692307693
+        },
+        "15": {
+          "seed": 1,
+          "struct": 0.8000000000000002,
+          "board": 0.07692307692307693
+        }
+      },
+      "seed0": {
+        "standard28": {
+          "struct_f1": 0.5263157894736842,
+          "board_f1": 0.08695652173913043,
+          "traced": true
+        },
+        "turbo6": {
+          "struct_f1": 0.5263157894736842,
+          "board_f1": 0.08695652173913043,
+          "traced": true
+        },
+        "turbo10": {
+          "struct_f1": 0.761904761904762,
+          "board_f1": 0.07142857142857142,
+          "traced": true
+        },
+        "turbo15": {
+          "struct_f1": 0.7272727272727272,
+          "board_f1": 0.058823529411764705,
+          "traced": true
+        }
+      }
+    },
+    {
+      "case": "real-console003",
+      "medoid": {
+        "6": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 0.5
+        },
+        "10": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 0.5
+        },
+        "15": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 0.5
+        }
+      },
+      "seed0": {
+        "standard28": {
+          "struct_f1": 1.0,
+          "board_f1": 0.5,
+          "traced": true
+        },
+        "turbo6": {
+          "struct_f1": 1.0,
+          "board_f1": 0.5,
+          "traced": true
+        },
+        "turbo10": {
+          "struct_f1": 1.0,
+          "board_f1": 0.5,
+          "traced": true
+        },
+        "turbo15": {
+          "struct_f1": 1.0,
+          "board_f1": 0.5,
+          "traced": true
+        }
+      }
+    },
+    {
+      "case": "real-console004",
+      "medoid": {
+        "6": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 0.20000000000000004
+        },
+        "10": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 0.8000000000000002
+        },
+        "15": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 0.4000000000000001
+        }
+      },
+      "seed0": {
+        "standard28": {
+          "struct_f1": 1.0,
+          "board_f1": 0.8000000000000002,
+          "traced": true
+        },
+        "turbo6": {
+          "struct_f1": 1.0,
+          "board_f1": 0.20000000000000004,
+          "traced": true
+        },
+        "turbo10": {
+          "struct_f1": 1.0,
+          "board_f1": 0.8000000000000002,
+          "traced": true
+        },
+        "turbo15": {
+          "struct_f1": 1.0,
+          "board_f1": 0.4000000000000001,
+          "traced": true
+        }
+      }
+    },
+    {
+      "case": "real-console008",
+      "medoid": {
+        "6": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 0.3
+        },
+        "10": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 0.3
+        },
+        "15": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 0.3
+        }
+      },
+      "seed0": {
+        "standard28": {
+          "struct_f1": 0.9333333333333333,
+          "board_f1": 0.11764705882352941,
+          "traced": true
+        },
+        "turbo6": {
+          "struct_f1": 1.0,
+          "board_f1": 0.3,
+          "traced": true
+        },
+        "turbo10": {
+          "struct_f1": 1.0,
+          "board_f1": 0.3,
+          "traced": true
+        },
+        "turbo15": {
+          "struct_f1": 1.0,
+          "board_f1": 0.3,
+          "traced": true
+        }
+      }
+    },
+    {
+      "case": "real-console021",
+      "medoid": {
+        "6": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 0.2
+        },
+        "10": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 0.13333333333333333
+        },
+        "15": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 0.13333333333333333
+        }
+      },
+      "seed0": {
+        "standard28": {
+          "struct_f1": 1.0,
+          "board_f1": 0.13333333333333333,
+          "traced": true
+        },
+        "turbo6": {
+          "struct_f1": 1.0,
+          "board_f1": 0.2,
+          "traced": true
+        },
+        "turbo10": {
+          "struct_f1": 1.0,
+          "board_f1": 0.13333333333333333,
+          "traced": true
+        },
+        "turbo15": {
+          "struct_f1": 1.0,
+          "board_f1": 0.13333333333333333,
+          "traced": true
+        }
+      }
+    },
+    {
+      "case": "real-console028",
+      "medoid": {
+        "6": {
+          "seed": 1,
+          "struct": 0.8571428571428571,
+          "board": 0.8571428571428571
+        },
+        "10": {
+          "seed": 1,
+          "struct": 0.8571428571428571,
+          "board": 0.0
+        },
+        "15": {
+          "seed": 1,
+          "struct": 0.8571428571428571,
+          "board": 0.0
+        }
+      },
+      "seed0": {
+        "standard28": {
+          "struct_f1": 0.5333333333333333,
+          "board_f1": 0.13333333333333333,
+          "traced": true
+        },
+        "turbo6": {
+          "struct_f1": 0.2222222222222222,
+          "board_f1": 0.10526315789473685,
+          "traced": true
+        },
+        "turbo10": {
+          "struct_f1": 1.0,
+          "board_f1": 0.14285714285714285,
+          "traced": true
+        },
+        "turbo15": {
+          "struct_f1": 1.0,
+          "board_f1": 0.14285714285714285,
+          "traced": true
+        }
+      }
+    },
+    {
+      "case": "real-console032",
+      "medoid": {
+        "6": {
+          "seed": 1,
+          "struct": 0.8,
+          "board": 0.2
+        },
+        "10": {
+          "seed": 1,
+          "struct": 0.8,
+          "board": 0.8
+        },
+        "15": {
+          "seed": 1,
+          "struct": 0.8,
+          "board": 0.8
+        }
+      },
+      "seed0": {
+        "standard28": {
+          "struct_f1": 0.923076923076923,
+          "board_f1": 0.26666666666666666,
+          "traced": true
+        },
+        "turbo6": {
+          "struct_f1": 0.7142857142857143,
+          "board_f1": 0.23529411764705885,
+          "traced": true
+        },
+        "turbo10": {
+          "struct_f1": 0.8333333333333334,
+          "board_f1": 0.15384615384615383,
+          "traced": true
+        },
+        "turbo15": {
+          "struct_f1": 1.0,
+          "board_f1": 0.15384615384615383,
+          "traced": true
+        }
+      }
+    },
+    {
+      "case": "real-console039",
+      "medoid": {
+        "6": {
+          "seed": 1,
+          "struct": 1.0,
+          "board": 0.5263157894736842
+        },
+        "10": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 0.10526315789473685
+        },
+        "15": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 0.10526315789473685
+        }
+      },
+      "seed0": {
+        "standard28": {
+          "struct_f1": 1.0,
+          "board_f1": 0.2105263157894737,
+          "traced": true
+        },
+        "turbo6": {
+          "struct_f1": 0.5555555555555556,
+          "board_f1": 0.09090909090909091,
+          "traced": true
+        },
+        "turbo10": {
+          "struct_f1": 1.0,
+          "board_f1": 0.10526315789473685,
+          "traced": true
+        },
+        "turbo15": {
+          "struct_f1": 1.0,
+          "board_f1": 0.10526315789473685,
+          "traced": true
+        }
+      }
+    },
+    {
+      "case": "real-console043",
+      "medoid": {
+        "6": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 0.8333333333333334
+        },
+        "10": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 1.0
+        },
+        "15": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 1.0
+        }
+      },
+      "seed0": {
+        "standard28": {
+          "struct_f1": 1.0,
+          "board_f1": 0.8333333333333334,
+          "traced": true
+        },
+        "turbo6": {
+          "struct_f1": 1.0,
+          "board_f1": 0.8333333333333334,
+          "traced": true
+        },
+        "turbo10": {
+          "struct_f1": 1.0,
+          "board_f1": 1.0,
+          "traced": true
+        },
+        "turbo15": {
+          "struct_f1": 1.0,
+          "board_f1": 1.0,
+          "traced": true
+        }
+      }
+    },
+    {
+      "case": "real-open024",
+      "medoid": {
+        "6": {
+          "seed": 2,
+          "struct": 0.9333333333333333,
+          "board": 0.0
+        },
+        "10": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 0.0
+        },
+        "15": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 0.0
+        }
+      },
+      "seed0": {
+        "standard28": {
+          "struct_f1": 0.0,
+          "board_f1": 0.0,
+          "traced": false
+        },
+        "turbo6": {
+          "struct_f1": 0.631578947368421,
+          "board_f1": 0.0,
+          "traced": true
+        },
+        "turbo10": {
+          "struct_f1": 1.0,
+          "board_f1": 0.0,
+          "traced": true
+        },
+        "turbo15": {
+          "struct_f1": 1.0,
+          "board_f1": 0.0,
+          "traced": true
+        }
+      }
+    },
+    {
+      "case": "real-open041",
+      "medoid": {
+        "6": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 0.2222222222222222
+        },
+        "10": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 0.2222222222222222
+        },
+        "15": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 0.2222222222222222
+        }
+      },
+      "seed0": {
+        "standard28": {
+          "struct_f1": 1.0,
+          "board_f1": 0.2222222222222222,
+          "traced": true
+        },
+        "turbo6": {
+          "struct_f1": 1.0,
+          "board_f1": 0.2222222222222222,
+          "traced": true
+        },
+        "turbo10": {
+          "struct_f1": 1.0,
+          "board_f1": 0.2222222222222222,
+          "traced": true
+        },
+        "turbo15": {
+          "struct_f1": 1.0,
+          "board_f1": 0.2222222222222222,
+          "traced": true
+        }
+      }
+    },
+    {
+      "case": "real-open056",
+      "medoid": {
+        "6": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 0.3
+        },
+        "10": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 0.2
+        },
+        "15": {
+          "seed": 0,
+          "struct": 1.0,
+          "board": 0.2
+        }
+      },
+      "seed0": {
+        "standard28": {
+          "struct_f1": 1.0,
+          "board_f1": 0.2,
+          "traced": true
+        },
+        "turbo6": {
+          "struct_f1": 1.0,
+          "board_f1": 0.3,
+          "traced": true
+        },
+        "turbo10": {
+          "struct_f1": 1.0,
+          "board_f1": 0.2,
+          "traced": true
+        },
+        "turbo15": {
+          "struct_f1": 1.0,
+          "board_f1": 0.2,
+          "traced": true
+        }
+      }
+    }
+  ]
+}

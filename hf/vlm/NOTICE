@@ -1,0 +1,4 @@
+Copyright 2026 Superpapotas
+Fabivo furniture board-list LoRA. Apache-2.0.
+Fine-tuned adapter for Qwen/Qwen3.5-9B. The training loader used unsloth/Qwen3.5-9B.
+The base is Apache-2.0. Base weights are not included.

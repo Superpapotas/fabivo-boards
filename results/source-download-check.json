@@ -1,0 +1,586 @@
+{
+  "counts": {
+    "missing-url": 118,
+    "changed": 4,
+    "verified": 22
+  },
+  "outcomes": [
+    {
+      "case": "pl-p-closed003",
+      "status": "missing-url"
+    },
+    {
+      "case": "pl-p-closed030",
+      "status": "changed"
+    },
+    {
+      "case": "pl-p-grid013",
+      "status": "missing-url"
+    },
+    {
+      "case": "pl-p-grid018",
+      "status": "missing-url"
+    },
+    {
+      "case": "pl-p-grid019",
+      "status": "missing-url"
+    },
+    {
+      "case": "pl-p-grid020",
+      "status": "missing-url"
+    },
+    {
+      "case": "pl-p-grid022",
+      "status": "missing-url"
+    },
+    {
+      "case": "pl-p-grid023",
+      "status": "missing-url"
+    },
+    {
+      "case": "pl-p-grid029",
+      "status": "missing-url"
+    },
+    {
+      "case": "pl-p-grid031",
+      "status": "missing-url"
+    },
+    {
+      "case": "pl-p-grid048",
+      "status": "missing-url"
+    },
+    {
+      "case": "pl-p-grid059",
+      "status": "missing-url"
+    },
+    {
+      "case": "pl-p-open057",
+      "status": "missing-url"
+    },
+    {
+      "case": "pl-p-src2-classic003",
+      "status": "missing-url"
+    },
+    {
+      "case": "pl-p-src2-classic007",
+      "status": "missing-url"
+    },
+    {
+      "case": "pl-p-src2-classic008",
+      "status": "missing-url"
+    },
+    {
+      "case": "pl-p-src2-classic016",
+      "status": "verified"
+    },
+    {
+      "case": "pl-p-src2-geo002",
+      "status": "missing-url"
+    },
+    {
+      "case": "pl-p-src2-geo010",
+      "status": "missing-url"
+    },
+    {
+      "case": "pl-p-src2-geo011",
+      "status": "missing-url"
+    },
+    {
+      "case": "pl-p-src2-geo016",
+      "status": "missing-url"
+    },
+    {
+      "case": "pl-p-src2-geo025",
+      "status": "missing-url"
+    },
+    {
+      "case": "pl-p-src2-geo028",
+      "status": "missing-url"
+    },
+    {
+      "case": "pl-p-src2-geo032",
+      "status": "missing-url"
+    },
+    {
+      "case": "pl-p-src2-geo036",
+      "status": "missing-url"
+    },
+    {
+      "case": "pl-p-src2-geo037",
+      "status": "missing-url"
+    },
+    {
+      "case": "pl-p-src2-geo039",
+      "status": "missing-url"
+    },
+    {
+      "case": "pl-p-src2-geo040",
+      "status": "missing-url"
+    },
+    {
+      "case": "pl-p-src2-geo043",
+      "status": "missing-url"
+    },
+    {
+      "case": "pl-p-src2-geo044",
+      "status": "missing-url"
+    },
+    {
+      "case": "pl-p-src2-mixed030",
+      "status": "missing-url"
+    },
+    {
+      "case": "pl-p-src2-mixed032",
+      "status": "missing-url"
+    },
+    {
+      "case": "pl-p-src2-mixed038",
+      "status": "missing-url"
+    },
+    {
+      "case": "pl-p-src2-mixed040",
+      "status": "missing-url"
+    },
+    {
+      "case": "pl-p-u1",
+      "status": "missing-url"
+    },
+    {
+      "case": "pl-p-u6",
+      "status": "missing-url"
+    },
+    {
+      "case": "pl-w-001",
+      "status": "verified"
+    },
+    {
+      "case": "pl-w-010",
+      "status": "verified"
+    },
+    {
+      "case": "pl-w-019",
+      "status": "verified"
+    },
+    {
+      "case": "pl-w-024",
+      "status": "verified"
+    },
+    {
+      "case": "pl-w-025",
+      "status": "verified"
+    },
+    {
+      "case": "pl-w-031",
+      "status": "verified"
+    },
+    {
+      "case": "pl-w-060",
+      "status": "verified"
+    },
+    {
+      "case": "pl-w-079",
+      "status": "verified"
+    },
+    {
+      "case": "pl-w-096",
+      "status": "verified"
+    },
+    {
+      "case": "pl-w-100",
+      "status": "verified"
+    },
+    {
+      "case": "pl-w-129",
+      "status": "verified"
+    },
+    {
+      "case": "pl-w-195",
+      "status": "verified"
+    },
+    {
+      "case": "pl-w-245",
+      "status": "verified"
+    },
+    {
+      "case": "pl-w-703",
+      "status": "verified"
+    },
+    {
+      "case": "pl-w-849",
+      "status": "verified"
+    },
+    {
+      "case": "pl-w-876",
+      "status": "verified"
+    },
+    {
+      "case": "pl-w-908",
+      "status": "verified"
+    },
+    {
+      "case": "pl-w-974",
+      "status": "verified"
+    },
+    {
+      "case": "real-closed002",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-closed005",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-closed025",
+      "status": "changed"
+    },
+    {
+      "case": "real-closed050",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-console001",
+      "status": "verified"
+    },
+    {
+      "case": "real-console009",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-console015",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-console016",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-console029",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-console044",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-console047",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-console048",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-console051",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-grid004",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-grid010",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-grid016",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-grid051",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-open030",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-open035",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0002",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0003",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0009",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0010",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0011",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0016",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0021",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0024",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0032",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0034",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0036",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0037",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0038",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0040",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0041",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0042",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0043",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0044",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0045",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0054",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0056",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0058",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0060",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0087",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0092",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0100",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0101",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0102",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0103",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0104",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0108",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0110",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0114",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0282",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0291",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-pix-book0326",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-src2-classic019",
+      "status": "verified"
+    },
+    {
+      "case": "real-src2-geo027",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-u5",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-u7",
+      "status": "missing-url"
+    },
+    {
+      "case": "boxed-centre-photo",
+      "status": "missing-url"
+    },
+    {
+      "case": "photo-asymmetric-bookcase",
+      "status": "missing-url"
+    },
+    {
+      "case": "photo-bookcase-run",
+      "status": "missing-url"
+    },
+    {
+      "case": "photo-built-in-display",
+      "status": "missing-url"
+    },
+    {
+      "case": "photo-staggered-console",
+      "status": "missing-url"
+    },
+    {
+      "case": "photo-wall-niche-grid",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-closed011",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-closed021",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-console003",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-console004",
+      "status": "verified"
+    },
+    {
+      "case": "real-console008",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-console021",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-console028",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-console032",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-console039",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-console043",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-open024",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-open041",
+      "status": "missing-url"
+    },
+    {
+      "case": "real-open056",
+      "status": "missing-url"
+    },
+    {
+      "case": "h48-closed028",
+      "status": "changed"
+    },
+    {
+      "case": "h48-closed044",
+      "status": "changed"
+    },
+    {
+      "case": "h48-grid015",
+      "status": "missing-url"
+    },
+    {
+      "case": "h48-grid025",
+      "status": "missing-url"
+    },
+    {
+      "case": "h48-grid033",
+      "status": "missing-url"
+    },
+    {
+      "case": "h48-grid037",
+      "status": "missing-url"
+    },
+    {
+      "case": "h48-grid050",
+      "status": "missing-url"
+    },
+    {
+      "case": "h48-grid060",
+      "status": "missing-url"
+    },
+    {
+      "case": "h48-src2-classic012",
+      "status": "missing-url"
+    },
+    {
+      "case": "h48-src2-classic062",
+      "status": "missing-url"
+    },
+    {
+      "case": "h48-src2-classic069",
+      "status": "missing-url"
+    },
+    {
+      "case": "h48-src2-geo035",
+      "status": "missing-url"
+    }
+  ],
+  "warning": "Verified originals differ from resized training copies. Missing or changed photos are not redistributed."
+}

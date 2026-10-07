@@ -1,0 +1,57 @@
+[
+  {
+    "method": "m10 direct four-seed medoid",
+    "structural_f1": 0.9225339757982106,
+    "board_f1": 0.211053225677635,
+    "n": 19,
+    "source": "archive/qwen21-m10/cons-1430-ema.json; archive/qwen21-m10-gold-two-stage-v2/results.json"
+  },
+  {
+    "method": "m10 Turbo 6 steps, seed 0",
+    "n": 19,
+    "struct_f1": 0.695375742798361,
+    "board_f1": 0.13790253626759788,
+    "traced": 17,
+    "actual_steps_verified": 6,
+    "source": "archive/qwen21-m10-steps61015-gold/results.json"
+  },
+  {
+    "method": "m10 Turbo 10 steps, seed 0",
+    "n": 19,
+    "struct_f1": 0.8497356698729696,
+    "board_f1": 0.19837894785504084,
+    "traced": 18,
+    "actual_steps_verified": 10,
+    "source": "archive/qwen21-m10-steps61015-gold/results.json"
+  },
+  {
+    "method": "m10 Turbo 15 steps, seed 0",
+    "n": 19,
+    "struct_f1": 0.9151096310918062,
+    "board_f1": 0.16774343458674423,
+    "traced": 19,
+    "actual_steps_verified": 15,
+    "source": "archive/qwen21-m10-steps61015-gold/results.json"
+  },
+  {
+    "method": "two-stage four-seed medoid",
+    "n": 19,
+    "structural_f1": 0.772044908920666,
+    "board_f1": 0.18557387577856976,
+    "source": "archive/qwen21-m10-gold-two-stage-v2/results.json"
+  },
+  {
+    "method": "Qwen3.5-9B 800",
+    "structural_f1": 0.8975,
+    "board_f1": 0.2033,
+    "selected_by_test": true,
+    "source": "archive/q35-9b-m10/summary.json"
+  },
+  {
+    "method": "Qwen3.5-9B 800-ema",
+    "structural_f1": 0.9284,
+    "board_f1": 0.1463,
+    "selected_by_test": false,
+    "source": "archive/q35-9b-m10/summary.json"
+  }
+]

@@ -1,0 +1,23 @@
+__pycache__/
+*.pyc
+.env*
+.modal.toml
+kaggle.json
+auth.json
+*.key
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.tar
+*.zip
+*.jpg
+*.jpeg
+*.png
+# Reviewed metric figures and labeled comparison composites only.
+# Standalone original-photo data stays excluded.
+!assets/figures/*.png
+!assets/comparisons/*.png
+data/
+weights/
+outputs/

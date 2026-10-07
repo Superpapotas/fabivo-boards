@@ -1,0 +1,108 @@
+{
+  "counts": {
+    "train": {
+      "blend1": 853,
+      "cf1": 193,
+      "codex5": 550,
+      "codex6": 208,
+      "codex7s": 285,
+      "orph7": 16,
+      "orph7t": 126,
+      "photoclean": 8,
+      "pl": 54,
+      "real": 59,
+      "sdxl": 2,
+      "three1": 48
+    },
+    "test": {
+      "blend1": 15,
+      "codex5": 30,
+      "three1": 8
+    },
+    "gold": {
+      "boxed": 1,
+      "photo": 5,
+      "real": 13
+    },
+    "holdout": {
+      "h48": 12
+    }
+  },
+  "excluded": [],
+  "families": {
+    "blend1": {
+      "decision": "included",
+      "reason": "Procedural Blender render. Poly Haven assets are CC0."
+    },
+    "cf1": {
+      "decision": "included",
+      "reason": "Counterfactual Blender render. No web-photo composite."
+    },
+    "three1": {
+      "decision": "included",
+      "reason": "Procedural Three.js render with the same CC0 asset library."
+    },
+    "orph7t": {
+      "decision": "included",
+      "reason": "Procedural Three.js orphan-archetype render."
+    },
+    "codex5": {
+      "decision": "labels-only",
+      "reason": "Generated from plans. Generator terms not established for this release."
+    },
+    "codex6": {
+      "decision": "labels-only",
+      "reason": "Generated from plans. Generator terms not established for this release."
+    },
+    "codex7s": {
+      "decision": "labels-only",
+      "reason": "Generated symmetric plans. Generator terms not established for this release."
+    },
+    "orph7": {
+      "decision": "labels-only",
+      "reason": "Gateway/Codex generated images. Generator terms not established."
+    },
+    "photoclean": {
+      "decision": "labels-only",
+      "reason": "Earlier generated collection. Full per-image provenance not established."
+    },
+    "sdxl": {
+      "decision": "labels-only",
+      "reason": "RealVisXL and ControlNet outputs. All component terms not established."
+    },
+    "real": {
+      "decision": "labels-only",
+      "reason": "Third-party web photographs. No image redistribution rights."
+    },
+    "pl": {
+      "decision": "labels-only",
+      "reason": "Human-approved pseudo-labels on third-party web photographs."
+    },
+    "photo": {
+      "decision": "labels-only",
+      "reason": "Third-party reference photographs. No image redistribution rights."
+    },
+    "boxed": {
+      "decision": "labels-only",
+      "reason": "Third-party reference photograph. No image redistribution rights."
+    },
+    "h48": {
+      "decision": "labels-only",
+      "reason": "Third-party holdout web photographs. No image redistribution rights."
+    },
+    "syn3d": {
+      "decision": "excluded",
+      "reason": "Not present in the static mix10 splits. Online procedural source only."
+    },
+    "flat": {
+      "decision": "excluded",
+      "reason": "Not present in the static mix10 splits. Online procedural source only."
+    },
+    "stagger": {
+      "decision": "excluded",
+      "reason": "Not present in the static mix10 splits."
+    }
+  },
+  "cross_split_sha256_overlap": 0,
+  "missing_source_urls": 118
+}

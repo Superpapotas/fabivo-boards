@@ -1,4 +1,4 @@
-"""Update documentation only in three EXISTING HF repositories.
+"""Update documentation only in four EXISTING HF repositories.
 
 Public targets require --allow-public. Repository visibility is unchanged.
 
@@ -14,6 +14,7 @@ from huggingface_hub import HfApi, CommitOperationAdd, CommitOperationDelete, hf
 
 TARGETS = [
     ('image', 'Superpapotas1/fabivo-boards-image-lora', 'model'),
+    ('m11', 'Superpapotas1/fabivo-boards-image-lora-m11', 'model'),
     ('vlm', 'Superpapotas1/fabivo-boards-vlm-9b', 'model'),
     ('dataset', 'Superpapotas1/fabivo-furniture-boards', 'dataset'),
 ]
@@ -46,19 +47,30 @@ def main():
         card = (root/'hf'/family/'README.md').read_text().replace('../../', '')
         (payload/'README.md').write_text(card)
         files = [payload/'README.md']
-        for folder, pattern in [('assets/figures','*'), ('assets/comparisons','*.png'), ('docs','*.md'), ('docs','*.html'), ('results','*.json')]:
+        for folder, pattern in [('assets/figures','*'), ('assets/comparisons','*.png'), ('assets/gpt-comparison','*'), ('assets/demo-examples','*'), ('docs','*.md'), ('docs','*.html'), ('results','*.json')]:
             for source in sorted((root/folder).glob(pattern)):
                 if not source.is_file():
                     continue
-                assert source.suffix in ['.svg','.png','.md','.html','.json']
+                assert source.suffix in ['.svg','.png','.jpg','.md','.html','.json']
                 destination = payload/source.relative_to(root)
                 destination.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copyfile(source, destination)
                 files.append(destination)
         verify = stage/family/'downloaded'
-        manifest_local = Path(hf_hub_download(repo, 'SHA256SUMS.json', repo_type=kind,
-                                             revision=before.sha, local_dir=verify))
-        manifest = json.loads(manifest_local.read_text())
+        if 'SHA256SUMS.json' in baseline:
+            manifest_local = Path(hf_hub_download(repo, 'SHA256SUMS.json', repo_type=kind,
+                                                 revision=before.sha, local_dir=verify))
+            manifest = json.loads(manifest_local.read_text())
+        else:
+            # The new m11 release has no checksum index yet. Preserve its core files.
+            manifest = {}
+            for sibling in before.siblings:
+                if sibling.lfs:
+                    manifest[sibling.rfilename] = sibling.lfs.sha256
+                else:
+                    existing = Path(hf_hub_download(repo, sibling.rfilename, repo_type=kind,
+                                                    revision=before.sha, local_dir=verify))
+                    manifest[sibling.rfilename] = sha(existing)
         removed = {f'assets/figures/m11-gallery-{n}.{ext}' for n in range(1,5) for ext in ['png','svg']} & set(baseline)
         for name in removed:
             manifest.pop(name, None)
@@ -67,8 +79,8 @@ def main():
         (payload/'SHA256SUMS.json').write_text(json.dumps(manifest,indent=2,sort_keys=True)+'\n')
         files.append(payload/'SHA256SUMS.json')
         changes = {str(p.relative_to(payload)) for p in files}
-        assert all(p == 'README.md' or p == 'SHA256SUMS.json' or p.startswith(('docs/','results/','assets/figures/','assets/comparisons/')) for p in changes)
-        assert not any(p.endswith(('.safetensors','.jpg','.txt')) for p in changes)
+        assert all(p == 'README.md' or p == 'SHA256SUMS.json' or p.startswith(('docs/','results/','assets/figures/','assets/comparisons/','assets/gpt-comparison/','assets/demo-examples/')) for p in changes)
+        assert not any(p.endswith(('.safetensors','.txt')) for p in changes)
         operations = [CommitOperationAdd(path_in_repo=str(p.relative_to(payload)), path_or_fileobj=p) for p in files]
         operations.extend(CommitOperationDelete(path_in_repo=p) for p in sorted(removed))
         result = api.create_commit(repo, repo_type=kind, operations=operations,
@@ -81,7 +93,7 @@ def main():
         if current.get('.gitattributes') != baseline.get('.gitattributes'):
             previous = Path(hf_hub_download(repo, '.gitattributes', repo_type=kind, revision=before.sha)).read_text().splitlines()
             updated = Path(hf_hub_download(repo, '.gitattributes', repo_type=kind, revision=after.sha)).read_text().splitlines()
-            expected = {p + ' filter=lfs diff=lfs merge=lfs -text' for p in changes if p.endswith('.png')}
+            expected = {p + ' filter=lfs diff=lfs merge=lfs -text' for p in changes if p.endswith(('.png','.jpg'))}
             assert set(previous) <= set(updated), 'Hub removed previous LFS attributes'
             assert set(updated)-set(previous) <= expected, 'Unexpected Hub-managed LFS attribute'
             changes.add('.gitattributes')

@@ -6,9 +6,19 @@ A product photograph shows perspective, books, doors and shadows. A furniture ed
 
 ![The staggered console reference, the generated board drawing and its actual Fabivo CAD panels.](assets/comparisons/05-photo-staggered-console.png)
 
-*The stepped outline and partial shelf runs carry through to CAD. The reconstruction is not exact: this case scores 0.889 structural F1. Width, depth, thickness and finish are assigned defaults, not measurements from the photo. Experimental m11, Turbo10, four-seed medoid; the released weights remain m10.*
+*The stepped outline and partial shelf runs carry through to CAD. The reconstruction is not exact: this case scores 0.889 structural F1. Width, depth, thickness and finish are assigned defaults, not measurements from the photo. m11, Turbo10, four-seed medoid. [m11 weights are now released separately](https://huggingface.co/Superpapotas1/fabivo-boards-image-lora-m11); the m10 release is unchanged.*
 
 **Read in depth:** [all 19 photo comparisons](docs/m11-gallery.md) · [method and code](docs/method.md) · [training / experiments](docs/experiments.md) · [scores](docs/m11-study.md) · [reproduction](docs/reproduction.md)
+
+## GPT Image 2.5 vs our fine-tuned model
+
+![The same console photograph, GPT Image 2.5 board drawing and compiled CAD, and Fabivo m11 drawing and compiled CAD.](assets/gpt-comparison/photo-staggered-console.jpg)
+
+**Two edits with GPT Image 2.5; one direct drawing with Fabivo m11.** Both real drawings pass through the same Fabivo reader. These saved examples show what each pipeline preserves or changes; they do not establish general superiority. GPT uses low quality and frontal candidate 1; m11 uses Turbo10, seed 0 and 768 pixels. The GPT console is a saved rerun after its first provider response failed. Prompts, resolution and budgets differ. CAD dimensions are defaults, not photo measurements.
+
+[All three paired examples and exact protocol](docs/gpt-image-comparison.md) · [the ten requested references and available m11 results](docs/demo-examples.md) · [browse the saved gallery](https://huggingface.co/spaces/Superpapotas1/fabivo-boards-demo)
+
+The gallery runs without GPU inference. Live ZeroGPU hosting was refused for this account (HTTP 402); no paid fallback was used. Six requested inputs have no new generation and are marked accordingly.
 
 ## The engineering problem
 
@@ -37,7 +47,7 @@ All 19 cases remain visible, in alphabetical order, with actual source photos, s
 | Four-seed medoid | Test (53) structural / board F1 | Reused gold (19) structural / board F1 |
 |---|---:|---:|
 | Released m10, rank96, six inference steps | 0.9235 / 0.2721 | 0.9225 / 0.2111 |
-| Experimental m11, rank64, six inference steps | 0.9137 / 0.2762 | 0.9141 / 0.2395 |
+| Released m11, rank64, six inference steps | 0.9137 / 0.2762 | 0.9141 / 0.2395 |
 | m11, later ten-step gold diagnostic | Not tested in this study | 0.9393 / 0.2524 |
 
 **Structural F1 asks whether the board arrangement agrees. Board F1 is stricter about position and proportion.** Move a shelf vertically but retain its order and endpoints: structural matching can still credit it while coordinate matching rejects it. Neither score checks unseen joints or real dimensions. The gap between the two scores is a limitation, not a detail to hide.
@@ -75,7 +85,7 @@ Inference needs the licensed base, adapter, Turbo adapter for that path, depende
 
 ## Assets and rights
 
-[Image adapter](https://huggingface.co/Superpapotas1/fabivo-boards-image-lora) · [VLM adapter](https://huggingface.co/Superpapotas1/fabivo-boards-vlm-9b) · [Annotations / approved procedural renders](https://huggingface.co/datasets/Superpapotas1/fabivo-furniture-boards)
+[m11 image adapter](https://huggingface.co/Superpapotas1/fabivo-boards-image-lora-m11) · [m10 image adapter](https://huggingface.co/Superpapotas1/fabivo-boards-image-lora) · [VLM adapter](https://huggingface.co/Superpapotas1/fabivo-boards-vlm-9b) · [Annotations / approved procedural renders](https://huggingface.co/datasets/Superpapotas1/fabivo-furniture-boards)
 
 Software: Apache-2.0. Owner annotations and approved procedural renders: CC BY 4.0. Qwen-Image 2.1 and its LoRA: **non-commercial Qwen RESEARCH LICENSE AGREEMENT. Built with Qwen.** Qwen3.5-9B and its VLM adapter: Apache-2.0. These grants are not interchangeable.
 

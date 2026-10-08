@@ -1,0 +1,77 @@
+[
+  {
+    "id": "boxed-centre-photo",
+    "name": "Wall display with projecting centre box",
+    "comparison": "boxed-centre-photo.jpg",
+    "gpt_model": "azure/gpt-image-2.5-sunburst",
+    "gpt_prompt_version": "two-step-v5",
+    "gpt_quality": "low",
+    "gpt_candidate": 1,
+    "gpt_run": "prod1",
+    "gpt_rerun": false,
+    "gpt_drawing_sha256": "3d89ee6c42f6f3864638000cbb2d7ee3fc12dc567ffcc514b547f637f4de4149",
+    "gpt_document_sha256": "f04fabeb6b8ba5804ae696f55d4bcee8ecc7dd03abe46544902fa19d374d52a5",
+    "m11_checkpoint_sha256": "776a9b8c897337449e65441866123b3a58e6f1ee12515b589e09e705c96e4b40",
+    "m11_policy": "Turbo10 / seed0 / 768 pixels",
+    "m11_drawing_sha256": "fe164c46a3bbbf4aeaf7c3e9596bfb7c3085020427057f04d6ea1273404d1664",
+    "m11_document_sha256": "b492abb360afd046194d989e25a6b24b8377aabca0c99d0294796852aa14260f",
+    "reference_sha256": "1311d1efb4c28c93e42d3dcb3ecd1eaa9e46325affec0a7e90571081e6e69402",
+    "defaults_mm": {
+      "width": 1200,
+      "depth": 350,
+      "thickness": 18
+    },
+    "rights": "Third-party reference photo; all original rights retained.",
+    "renderer": "Actual Fabivo production reader and depth-buffer renderer"
+  },
+  {
+    "id": "photo-built-in-display",
+    "name": "Built-in display with unequal openings",
+    "comparison": "photo-built-in-display.jpg",
+    "gpt_model": "azure/gpt-image-2.5-sunburst",
+    "gpt_prompt_version": "two-step-v5",
+    "gpt_quality": "low",
+    "gpt_candidate": 1,
+    "gpt_run": "prod1",
+    "gpt_rerun": false,
+    "gpt_drawing_sha256": "77ce2f8b7acb20091df880f9abb2a6da61d1fc0e5788d576edb66b682a34282e",
+    "gpt_document_sha256": "7672a4fc05405ae882c7920ac2faf88f9843e9a299191d8a14bbdc799d93ac27",
+    "m11_checkpoint_sha256": "776a9b8c897337449e65441866123b3a58e6f1ee12515b589e09e705c96e4b40",
+    "m11_policy": "Turbo10 / seed0 / 768 pixels",
+    "m11_drawing_sha256": "7905c13aa899b5dbe338afbcec31ea5fedd9cb6cabbbcf903129ea9d0a402eac",
+    "m11_document_sha256": "af4938239ec07784f553e18e42ba029c3fa2523d27a3f9479bada8edb47bd601",
+    "reference_sha256": "0e5ad9160c617ea391e2f1a1bdc1858ec40943c101992c5fab5467752224b1aa",
+    "defaults_mm": {
+      "width": 1200,
+      "depth": 350,
+      "thickness": 18
+    },
+    "rights": "Third-party reference photo; all original rights retained.",
+    "renderer": "Actual Fabivo production reader and depth-buffer renderer"
+  },
+  {
+    "id": "photo-staggered-console",
+    "name": "White staggered console",
+    "comparison": "photo-staggered-console.jpg",
+    "gpt_model": "azure/gpt-image-2.5-sunburst",
+    "gpt_prompt_version": "two-step-v5",
+    "gpt_quality": "low",
+    "gpt_candidate": 1,
+    "gpt_run": "prod1b",
+    "gpt_rerun": true,
+    "gpt_drawing_sha256": "fa44214df452103782e23cdf8321da4d6b9c46471392632b54fee000d480d514",
+    "gpt_document_sha256": "faf867525c2aeaf5388b9ad87dec9aaff2c5c954333f24f5821930052a8c5a4f",
+    "m11_checkpoint_sha256": "776a9b8c897337449e65441866123b3a58e6f1ee12515b589e09e705c96e4b40",
+    "m11_policy": "Turbo10 / seed0 / 768 pixels",
+    "m11_drawing_sha256": "88f38c216a5e23d4abb44249264eb388200c97d83b9f00402ca9d3f5b7463341",
+    "m11_document_sha256": "cef1ebd49d55d98f26e007b33317fdb1024a684288450e8fe8333def9caaf0c6",
+    "reference_sha256": "46920791cf0fdfb9d0fce8e4aab9ccf4b4404c9ecdfe5b69d76c472559e7bf8f",
+    "defaults_mm": {
+      "width": 1200,
+      "depth": 350,
+      "thickness": 18
+    },
+    "rights": "Third-party reference photo; all original rights retained.",
+    "renderer": "Actual Fabivo production reader and depth-buffer renderer"
+  }
+]

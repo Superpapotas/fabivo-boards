@@ -16,6 +16,14 @@ This repository ships **m10 rank96, 1430-EMA**, fine-tuned from Qwen-Image 2.1. 
 
 *Why a drawing? A visible-wood mask does not specify shelf ends behind books. The tested representation asks the image model to remove perspective and contents and leave solid board bars. A deterministic reader then preserves their endpoints and compiles existing Fabivo features. No matched detector comparison was run. This preview uses experimental m11, not the adapter shipped here; CAD uses default width1200/depth350/thickness18 mm and a display finish, not measured photo dimensions.*
 
+## GPT Image 2.5 vs Fabivo m11
+
+![Same photograph, GPT Image 2.5 drawing and compiled CAD, and m11 drawing and compiled CAD.](../../assets/gpt-comparison/photo-staggered-console.jpg)
+
+GPT Image 2.5 uses two edits; the separately released [m11 adapter](https://huggingface.co/Superpapotas1/fabivo-boards-image-lora-m11) predicts the board drawing directly. Both actual drawings are compiled by the same Fabivo reader, without manual board repairs. These saved examples are not a controlled benchmark: prompts, resolution and budgets differ. GPT uses low quality and frontal candidate 1; m11 uses Turbo10, seed 0. The GPT console uses a saved rerun after the first provider response failed. CAD dimensions are defaults, not photo measurements. **This comparison uses m11, not the m10 weights in this repository.**
+
+[Three paired examples and protocol](../../docs/gpt-image-comparison.md) · [Ten requested references](../../docs/demo-examples.md) · [Saved gallery; no live GPU inference](https://huggingface.co/spaces/Superpapotas1/fabivo-boards-demo)
+
 ## Released m10 evidence
 
 | Four-seed medoid | Structural F1 | Board F1 |
@@ -27,7 +35,7 @@ The medoid selects a valid drawing by agreement between seeds, without gold labe
 
 A single-seed m10 study scored structural F1 0.6954/0.8497/0.9151 at six/ten/fifteen inference steps. Frontal-first Qwen processing scored 0.7720 and was rejected because the intermediate edit changed gaps and lengths. Test was used for development; gold was repeatedly inspected.
 
-## Experimental m11, kept separate
+## Released m11, kept separate
 
 m11 rank64, 3000-EMA was selected among three m11 checkpoints by test medoid F1: test/gold 0.9137/0.9141. It did not beat m10's test medoid. Rank, duration, initialization and resolution schedule changed together; no isolated rank benefit is established.
 

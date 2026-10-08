@@ -14,6 +14,14 @@ The image route can draw a reasonable shelf that the raster reader cannot parse 
 
 [Project explanation, actual photo-to-CAD examples and rejected experiments](https://github.com/Superpapotas/fabivo-boards). The examples there use the separate experimental m11 image model, not this VLM. AI tools assisted project code and documentation; base-model authorship is not claimed.
 
+## Related image-pipeline comparison
+
+![GPT Image 2.5 and the separate m11 image LoRA: actual drawings and compiled CAD for the same photo.](../../assets/gpt-comparison/photo-staggered-console.jpg)
+
+The image route compares two GPT Image 2.5 edits with one direct m11 drawing. **These outputs are not from this VLM adapter.** Both drawings enter the same Fabivo reader. This is a saved visual comparison, not a controlled accuracy benchmark; prompts, resolution and budgets differ. The GPT console uses a saved rerun after an invalid provider response. CAD dimensions are defaults, not photo measurements.
+
+[Three cases and protocol](../../docs/gpt-image-comparison.md) · [m11 image weights](https://huggingface.co/Superpapotas1/fabivo-boards-image-lora-m11) · [Saved gallery; no live inference](https://huggingface.co/spaces/Superpapotas1/fabivo-boards-demo)
+
 ## Results
 
 | Adapter | Test structural F1 | Gold structural F1 |

@@ -11,6 +11,14 @@ Front-view board annotations for reconstructing furniture from photographs. Each
 
 [Code, experiments and photo-to-CAD examples](https://github.com/Superpapotas/fabivo-boards)
 
+## GPT Image 2.5 vs the fine-tuned image model
+
+![Same source photograph, GPT Image 2.5 board drawing and CAD, and Fabivo m11 drawing and CAD.](../../assets/gpt-comparison/photo-staggered-console.jpg)
+
+These are **actual saved model predictions, not dataset labels**. GPT Image 2.5 uses a frontal edit followed by a drawing edit; m11 predicts a drawing directly. The same Fabivo reader compiles both, without manual board repairs. This is an illustrative comparison, not a controlled benchmark: prompts, resolution and budgets differ. GPT uses low quality and candidate 1; m11 uses Turbo10 and seed 0. The GPT console uses a saved rerun after the first provider response failed. CAD dimensions are defaults. Third-party reference photos are excluded from this dataset's CC BY 4.0 grant.
+
+[Three paired cases and protocol](../../docs/gpt-image-comparison.md) · [Ten requested references](../../docs/demo-examples.md) · [m11 weights](https://huggingface.co/Superpapotas1/fabivo-boards-image-lora-m11) · [Saved gallery; no live inference](https://huggingface.co/spaces/Superpapotas1/fabivo-boards-demo)
+
 ## Contents and format
 
 The release contains 2,486 board-list labels, 2,486 board drawings and 1,243 procedural input renders. The other 1,243 input images are not included. Drawings are new black-on-white renders of our board-face annotations, not copies of source photographs.

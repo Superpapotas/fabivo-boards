@@ -11,7 +11,16 @@
     "referenceSHA256": "64a277b46d7a398a7ecdb87fc79189e836eea6ce55d1391bae58658075ca4b57",
     "rights": "Third-party; all original rights retained. No public license granted.",
     "source_status": "Source and author not verified",
-    "status": "failed",
+    "status": "ok",
+    "drawingSHA256": "3af9371dca4a20f4011eeda0f25e3e8d6cb7ec3815f9c6954f96560a2465bc3d",
+    "cadSHA256": "fed690ab240b2eb2252d79089e0d1eb13ad45da3f91e55ac4fc522485f4cccae",
+    "documentSHA256": "afc46bbc7872ea050a0066cb04774c6f1c44c0e623a0f3ea395fa22feb1ac95d",
+    "model": "m11",
+    "schedule": "Turbo10",
+    "seed": 0,
+    "steps": 10,
+    "renderer": "Fabivo",
+    "generation_origin": "modal-actual-inference",
     "comparison": "example-01-comparison.jpg"
   },
   {
@@ -26,7 +35,16 @@
     "referenceSHA256": "3b203f0fa11acd181fe255bc49b104084ba8670834359b7b8387f134077be59d",
     "rights": "Third-party; all original rights retained. No public license granted.",
     "source_status": "Source and author not verified",
-    "status": "failed",
+    "status": "ok",
+    "drawingSHA256": "d1f760bf9cc30bdfc22191815436c9808df18900347fde6fed578d5feca0cb81",
+    "cadSHA256": "5c02e8083f0c21121ef57195763f308826c4f40108d01d6cfe747c86a612a1ed",
+    "documentSHA256": "12d72905e2644b351401b1f1ececff2a790d55daaca2cd3196e46adc9c75b05c",
+    "model": "m11",
+    "schedule": "Turbo10",
+    "seed": 0,
+    "steps": 10,
+    "renderer": "Fabivo",
+    "generation_origin": "modal-actual-inference",
     "comparison": "example-02-comparison.jpg"
   },
   {
@@ -41,7 +59,16 @@
     "referenceSHA256": "e765cc8da79159d7a5713ea01a0df916beebac505f5d21af4d9b629b4db77cf4",
     "rights": "Third-party; all original rights retained. No public license granted.",
     "source_status": "Source and author not verified",
-    "status": "failed",
+    "status": "ok",
+    "drawingSHA256": "d117c4be91ee76811dbbba525cc027e05f8abdbfdcd64ed432401ccb10c90e3d",
+    "cadSHA256": "79dde5238851ff2dcf606f05382c2d82eccbc4585d796b0981fcd65e163914cc",
+    "documentSHA256": "6cf0d119ac952291b2b43ccae741e3497a05ce34c06b65ca41cc1ec8a1540031",
+    "model": "m11",
+    "schedule": "Turbo10",
+    "seed": 0,
+    "steps": 10,
+    "renderer": "Fabivo",
+    "generation_origin": "modal-actual-inference",
     "comparison": "example-03-comparison.jpg"
   },
   {
@@ -57,7 +84,16 @@
     "rights": "Third-party; all original rights retained. No public license granted.",
     "source_status": "Source and author not verified",
     "same_reference_as": "photo-staggered-console",
-    "status": "failed",
+    "status": "ok",
+    "drawingSHA256": "608a76f72ebe36d23f9031e350bf631e8d2d1f86339d90a3746979c929852821",
+    "cadSHA256": "4204b98ddf81a82657788b81bbb6a525439c0e1dd930962af54dc96ab473e249",
+    "documentSHA256": "3cbd22d18ed7b2ab970260caa289b09cf05c44d581c40b955512be43f33675c6",
+    "model": "m11",
+    "schedule": "Turbo10",
+    "seed": 0,
+    "steps": 10,
+    "renderer": "Fabivo",
+    "generation_origin": "modal-actual-inference",
     "comparison": "example-04-comparison.jpg"
   },
   {
@@ -72,7 +108,16 @@
     "referenceSHA256": "233e829db7114c2509b71945900e3e98f2c18f2466bec2fb19becf183283ad58",
     "rights": "Third-party; all original rights retained. No public license granted.",
     "source_status": "Source and author not verified",
-    "status": "failed",
+    "status": "ok",
+    "drawingSHA256": "c71f2d51ba53c4aeb9784a7270e6dc250717ce65f2bbd06e115eb504c90c9c46",
+    "cadSHA256": "c0ba3aff0a52bee4d9f02abf77aa87d9c3b21758a741a61e0c80e84aa1f0df11",
+    "documentSHA256": "a80e2e2063af75bbc410f96f2e14eab257f9bc2d4be800bf4acca1d1bb821383",
+    "model": "m11",
+    "schedule": "Turbo10",
+    "seed": 0,
+    "steps": 10,
+    "renderer": "Fabivo",
+    "generation_origin": "modal-actual-inference",
     "comparison": "example-05-comparison.jpg"
   },
   {
@@ -87,7 +132,16 @@
     "referenceSHA256": "6a2ece63848010438f6e7b6d6c2e6666b8f98d1e9f201dfc58aebf947754289f",
     "rights": "Third-party; all original rights retained. No public license granted.",
     "source_status": "Source and author not verified",
-    "status": "failed",
+    "status": "ok",
+    "drawingSHA256": "32fdd7f5c67c3bd60585579ccf176daa76e9e1eb0f0522d17c082f03068cf9ad",
+    "cadSHA256": "9da2bd16009a9cb22a9ea2066223af4428f76f8d93799c48002f6fb6dbe1f0fb",
+    "documentSHA256": "1fd3e7eb3dc0ba6fba4529aff629bee9ca75d61f3685c0cac2cb0296cffb575c",
+    "model": "m11",
+    "schedule": "Turbo10",
+    "seed": 0,
+    "steps": 10,
+    "renderer": "Fabivo",
+    "generation_origin": "modal-actual-inference",
     "comparison": "example-06-comparison.jpg"
   },
   {
@@ -111,6 +165,7 @@
     "seed": 0,
     "steps": 10,
     "renderer": "Fabivo",
+    "generation_origin": "cached-actual-inference",
     "comparison": "boxed-centre-photo-comparison.jpg"
   },
   {
@@ -134,6 +189,7 @@
     "seed": 0,
     "steps": 10,
     "renderer": "Fabivo",
+    "generation_origin": "cached-actual-inference",
     "comparison": "photo-built-in-display-comparison.jpg"
   },
   {
@@ -157,6 +213,7 @@
     "seed": 0,
     "steps": 10,
     "renderer": "Fabivo",
+    "generation_origin": "cached-actual-inference",
     "comparison": "photo-staggered-console-comparison.jpg"
   },
   {
@@ -180,6 +237,7 @@
     "seed": 0,
     "steps": 10,
     "renderer": "Fabivo",
+    "generation_origin": "cached-actual-inference",
     "comparison": "real-open041-comparison.jpg"
   }
 ]

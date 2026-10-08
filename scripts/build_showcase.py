@@ -13,8 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 FONT = '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
 INK = '#262824'
 BG = '#faf9f6'
-# Presentation-only exclusions requested by the owner. Keep all benchmark scores.
-GALLERY_EXCLUDED = {'real-console028', 'real-console032'}
+from gallery_policy import GALLERY_EXCLUDED
 
 
 def text(draw, xy, value, size, color=INK):

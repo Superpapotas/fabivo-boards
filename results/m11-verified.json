@@ -273,7 +273,7 @@
     "torch": "2.14.1+cu130",
     "diffusers": "0.41.0.dev0"
   },
-  "checkpoint": "m11 rank64 3000-EMA (experimental; not released)",
+  "checkpoint": "m11 rank64 3000-EMA (public adapter; reused-gold diagnostic)",
   "cases": [
     {
       "case": "boxed-centre-photo",

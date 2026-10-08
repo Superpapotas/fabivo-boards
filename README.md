@@ -18,7 +18,7 @@ A product photograph shows perspective, books, doors and shadows. A furniture ed
 
 [All three paired examples and exact protocol](docs/gpt-image-comparison.md) · [the ten requested references and available m11 results](docs/demo-examples.md) · [browse the saved gallery](https://huggingface.co/spaces/Superpapotas1/fabivo-boards-demo)
 
-The gallery runs without GPU inference. Live ZeroGPU hosting was refused for this account (HTTP 402); no paid fallback was used. Six requested inputs have no new generation and are marked accordingly.
+The gallery shows ten real saved predictions and compiled CAD documents; it does not run live inference. After ZeroGPU hosting was refused (HTTP 402), the owner authorized one bounded Modal batch to generate the six missing examples. Four other predictions reuse verified archived outputs. There is no permanent GPU server.
 
 ## The engineering problem
 

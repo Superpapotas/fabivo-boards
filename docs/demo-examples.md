@@ -10,61 +10,61 @@ The photographs remain third-party material. Sources and authors are not verifie
 
 ![Stepped open bookcase: reference, model drawing and CAD outcome.](../assets/demo-examples/example-01-comparison.jpg)
 
-Not generated: Hugging Face denied ZeroGPU hosting (HTTP 402). No GPU call was made and no result was substituted. This is a hosting limit, not a measured model failure.
+m11 / Turbo10 / seed 0. Actual saved drawing and compiled Fabivo panels; no corrected geometry.
 
 ## 02 / Open shelving with projecting shelves
 
 ![Open shelving with projecting shelves: reference, model drawing and CAD outcome.](../assets/demo-examples/example-02-comparison.jpg)
 
-Not generated: Hugging Face denied ZeroGPU hosting (HTTP 402). No GPU call was made and no result was substituted. This is a hosting limit, not a measured model failure.
+m11 / Turbo10 / seed 0. Actual saved drawing and compiled Fabivo panels; no corrected geometry.
 
 ## 03 / Open shelf with staggered dividers
 
 ![Open shelf with staggered dividers: reference, model drawing and CAD outcome.](../assets/demo-examples/example-03-comparison.jpg)
 
-Not generated: Hugging Face denied ZeroGPU hosting (HTTP 402). No GPU call was made and no result was substituted. This is a hosting limit, not a measured model failure.
+m11 / Turbo10 / seed 0. Actual saved drawing and compiled Fabivo panels; no corrected geometry.
 
 ## 04 / White staggered console
 
 ![White staggered console: reference, model drawing and CAD outcome.](../assets/demo-examples/example-04-comparison.jpg)
 
-Not generated: Hugging Face denied ZeroGPU hosting (HTTP 402). No GPU call was made and no result was substituted. This is a hosting limit, not a measured model failure.
+m11 / Turbo10 / seed 0. Actual saved drawing and compiled Fabivo panels; no corrected geometry.
 
 ## 05 / Wood frame with black stepped shelves
 
 ![Wood frame with black stepped shelves: reference, model drawing and CAD outcome.](../assets/demo-examples/example-05-comparison.jpg)
 
-Not generated: Hugging Face denied ZeroGPU hosting (HTTP 402). No GPU call was made and no result was substituted. This is a hosting limit, not a measured model failure.
+m11 / Turbo10 / seed 0. Actual saved drawing and compiled Fabivo panels; no corrected geometry.
 
 ## 06 / Wood TV console with stepped top
 
 ![Wood TV console with stepped top: reference, model drawing and CAD outcome.](../assets/demo-examples/example-06-comparison.jpg)
 
-Not generated: Hugging Face denied ZeroGPU hosting (HTTP 402). No GPU call was made and no result was substituted. This is a hosting limit, not a measured model failure.
+m11 / Turbo10 / seed 0. Actual saved drawing and compiled Fabivo panels; no corrected geometry.
 
 ## 07 / Wall display with projecting centre box
 
 ![Wall display with projecting centre box: reference, model drawing and CAD outcome.](../assets/demo-examples/boxed-centre-photo-comparison.jpg)
 
-m11 / Turbo10 / seed 0. Actual cached drawing and compiled Fabivo panels; no corrected geometry.
+m11 / Turbo10 / seed 0. Actual saved drawing and compiled Fabivo panels; no corrected geometry.
 
 ## 08 / Built-in display with unequal openings
 
 ![Built-in display with unequal openings: reference, model drawing and CAD outcome.](../assets/demo-examples/photo-built-in-display-comparison.jpg)
 
-m11 / Turbo10 / seed 0. Actual cached drawing and compiled Fabivo panels; no corrected geometry.
+m11 / Turbo10 / seed 0. Actual saved drawing and compiled Fabivo panels; no corrected geometry.
 
 ## 09 / White staggered console
 
 ![White staggered console: reference, model drawing and CAD outcome.](../assets/demo-examples/photo-staggered-console-comparison.jpg)
 
-m11 / Turbo10 / seed 0. Actual cached drawing and compiled Fabivo panels; no corrected geometry.
+m11 / Turbo10 / seed 0. Actual saved drawing and compiled Fabivo panels; no corrected geometry.
 
 ## 10 / Three-row shelf with offset dividers
 
 ![Three-row shelf with offset dividers: reference, model drawing and CAD outcome.](../assets/demo-examples/real-open041-comparison.jpg)
 
-m11 / Turbo10 / seed 0. Actual cached drawing and compiled Fabivo panels; no corrected geometry.
+m11 / Turbo10 / seed 0. Actual saved drawing and compiled Fabivo panels; no corrected geometry.
 
 The reader uses assigned defaults of 1200 mm width, 350 mm depth and 18 mm boards. These are not calibrated measurements. Hidden construction and build safety are not established.
 

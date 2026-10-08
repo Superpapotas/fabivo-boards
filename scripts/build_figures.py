@@ -12,6 +12,7 @@ import math
 from pathlib import Path
 from statistics import mean
 from PIL import Image, ImageDraw, ImageFont
+from gallery_policy import GALLERY_EXCLUDED
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'assets/figures'
@@ -132,7 +133,7 @@ def main():
         'selection': selection, 'step_study': steps['summary'], 'standard_study': {k:v for k,v in standard.items() if k in ['n','seed','arms','caveat']},
         'conditional_common17': {arm:mean(r['scores'][arm]['struct_f1'] for r in common) for arm in standard['arms']},
         'setup': {k:manifest[k] for k in ['seeds','resolution','base_revision','turbo_revision','prompt','samplers','scheduler','torch','diffusers']},
-        'checkpoint': 'm11 rank64 3000-EMA (experimental; not released)',
+        'checkpoint': 'm11 rank64 3000-EMA (public adapter; reused-gold diagnostic)',
         'cases': [{'case':r['case'], 'medoid': {n:{'seed': int(Path(r[n]['pick']).name.rsplit('-s',1)[1]) if '-s' in Path(r[n]['pick']).name else 0, 'struct':r[n]['struct'],'board':r[n]['board']} for n in ['6','10','15']}, 'seed0':standard['cases'][i]['scores']} for i,r in enumerate(steps['cases'])]
     }
     (ROOT/'results/m11-verified.json').write_text(json.dumps(aggregate,indent=2)+'\n')
@@ -143,7 +144,7 @@ def main():
     chart('m11-step-study','m11 Turbo: four-seed step study','Same 19 gold cases, seeds 0–3, resolution 768; selected 3000-EMA checkpoint',['6 steps','10 steps','15 steps'], [('Medoid structural','struct',BLUE,[summary[n]['medoid_struct'] for n in ['6','10','15']]),('Mean single-seed structural','single',GREY,[summary[n]['single_seed_struct_mean'] for n in ['6','10','15']])], 'Mean seconds per drawing: '+ ' / '.join(f'{summary[n]["seconds_per_image"]:.2f}' for n in ['6','10','15']) + '; medoid requires four drawings.')
     arms = standard['arms']
     chart('m11-standard-turbo','m11: standard and Turbo, seed 0','Same checkpoint, 19 gold cases, resolution 768; no medoid',['Standard 28','Turbo 6','Turbo 10','Turbo 15'], [('Structural F1','struct',BLUE,[a['struct_f1'] for a in arms.values()]),('Board F1','board',GREY,[a['board_f1'] for a in arms.values()])], 'Traced: 17/19 standard; 19/19 each Turbo. Turbo changes weights AND schedule.')
-    gallery = ['# All 19 photo-to-CAD cases', '', 'Experimental m11 rank64 3000-EMA, Turbo10, resolution768, seeds0–3. The medoid picks one drawing by agreement among valid candidates, without gold labels. This is a reused gold diagnostic, not a test-selected production policy.', '', '[Open the static HTML case page](cases.html) locally for larger comparisons. Each figure shows the original third-party reference, the ACTUAL selected model drawing and the archived compiled document rendered by Fabivo. No geometry was corrected for presentation. Width1200 mm, depth350 mm and thickness18 mm are illustrative defaults, not photo measurements; the neutral finish is a display override.', '', 'References retain third-party rights and are not CC BY or Apache assets. [Sources and missing credits](comparison-sources.md). [Renderer and asset provenance](figure-provenance.md).', '']
+    gallery = ['# Photo-to-CAD gallery', '', '17 visual examples are shown. Two cases were removed from the example gallery at the owner\'s request. The benchmark and full score table still include all 19 cases; no scores were removed or recomputed.', '', 'Experimental m11 rank64 3000-EMA, Turbo10, resolution768, seeds0–3. The medoid picks one drawing by agreement among valid candidates, without gold labels. This is a reused gold diagnostic, not a test-selected production policy.', '', '[Open the static HTML case page](cases.html) locally for larger comparisons. Each figure shows the original third-party reference, the ACTUAL selected model drawing and the archived compiled document rendered by Fabivo. No geometry was corrected for presentation. Width1200 mm, depth350 mm and thickness18 mm are illustrative defaults, not photo measurements; the neutral finish is a display override.', '', 'References retain third-party rights and are not CC BY or Apache assets. [Sources and missing credits](comparison-sources.md). [Renderer and asset provenance](figure-provenance.md).', '']
     medoids = load(args.archive/'qwen21-m11-steps61015-gold/cons-10.json')
     assert [r['case'] for r in medoids] == [r['case'] for r in steps['cases']]
     for i, r in enumerate(steps['cases']):
@@ -152,6 +153,8 @@ def main():
         assert pick.parent == args.archive/'qwen21-m11-steps61015-gold'
         load(pick.with_name(pick.name+'-trace')/r['case']/'document-prod.json')
         name = f'{i+1:02d}-{r["case"]}'
+        if r['case'] in GALLERY_EXCLUDED:
+            continue
         gallery.extend([f'## {i+1:02d} / {r["case"]}', '', f'![Reference photograph, actual selected drawing and actual Fabivo CAD for {r["case"]}.](../assets/comparisons/{name}.png)', ''])
     gallery += ['## All-case scores', '', 'Structural / board F1. Main means include all 19 cases and failures. Full precision and seed-0 standard/Turbo scores are in [the verified JSON](../results/m11-verified.json).', '', '| Case | Turbo6 medoid | Turbo10 medoid | Turbo15 medoid | Standard28 seed0 |', '|---|---:|---:|---:|---:|']
     for i,r in enumerate(steps['cases']):

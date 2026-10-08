@@ -106,7 +106,7 @@ def main():
                         place(canvas, artifact, 38+j*588, 130, 548, 554)
                     record[key.replace('_path','SHA256')] = hashlib.sha256(path.read_bytes()).hexdigest()
                 record['documentSHA256'] = hashlib.sha256(document_path.read_bytes()).hexdigest()
-                record.update(model='m11', schedule='Turbo10', seed=0, steps=10, renderer='Fabivo')
+                record.update(model='m11', schedule='Turbo10', seed=0, steps=10, renderer='Fabivo', generation_origin=result.get('origin', 'saved-actual-inference'))
             else:
                 message = 'Not generated: hosting unavailable' if result.get('origin') == 'not-generated' else 'Generation or conversion failed'
                 text(draw, (626, 340), message, 23)
@@ -118,7 +118,7 @@ def main():
             canvas.save(out/comparison, quality=94)
             record['comparison'] = comparison
             if result['status'] == 'ok':
-                outcome = 'm11 / Turbo10 / seed 0. Actual cached drawing and compiled Fabivo panels; no corrected geometry.'
+                outcome = 'm11 / Turbo10 / seed 0. Actual saved drawing and compiled Fabivo panels; no corrected geometry.'
             elif result.get('origin') == 'not-generated':
                 outcome = 'Not generated: Hugging Face denied ZeroGPU hosting (HTTP 402). No GPU call was made and no result was substituted. This is a hosting limit, not a measured model failure.'
             else:

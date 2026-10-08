@@ -29,7 +29,7 @@ This is the rank64 EMA adapter from `qwen21-m11-r64/ckpt-3000-ema`. It redraws a
 
 [All three paired examples and protocol](../../docs/gpt-image-comparison.md) · [Ten requested references and available results](../../docs/demo-examples.md) · [Browse the saved gallery](https://huggingface.co/spaces/Superpapotas1/fabivo-boards-demo)
 
-The gallery is static and has no live inference. ZeroGPU hosting was denied for this account; no paid fallback or GPU quota was used. Six requested inputs remain ungenerated.
+The gallery is static and has no live inference. All ten requested files now have actual m11 drawings and compiled CAD documents: six from one owner-authorized, credit-limited Modal batch and four from verified archived runs. ZeroGPU hosting was denied; no permanent GPU server is attached.
 
 m11 is the project's only public model. Earlier m10 and VLM weights are kept privately, not deleted. Historical benchmark comparisons remain available.
 
@@ -63,7 +63,7 @@ python3 infer.py authorized-photo.jpg boards.png --steps 10
 sha256sum lora.safetensors
 ```
 
-The code needs compatible CUDA hardware and sufficient model memory. No external paid API is needed. This release was verified by public download and hash, not by a new GPU run. Free ZeroGPU hosting was requested for `Superpapotas1/fabivo-boards-demo`, but the server refused creation with HTTP 402 and an account-age/PRO/community-grant message. The linked gallery shows saved results only; there is **no verified live GPU inference**. No paid fallback was used.
+The code needs compatible CUDA hardware and sufficient model memory. No external paid API is needed. The published checkpoint was verified by public download and hash. Its exact pinned-base/Turbo10 load contract was also run on six authorized photos in a bounded L40S batch; all six returned ten real denoising steps and compiled CAD documents. This is a demonstration, not an independent accuracy test. Free ZeroGPU hosting was requested for `Superpapotas1/fabivo-boards-demo`, but the server refused creation with HTTP 402 and an account-age/PRO/community-grant message. The linked gallery shows saved results only; there is **no live GPU inference**. A later owner-authorized Modal batch filled the six missing examples using credits, with no permanent backend.
 
 ## License, changes and rights
 

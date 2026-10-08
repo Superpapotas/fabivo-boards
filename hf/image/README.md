@@ -45,7 +45,7 @@ A later **gold-only** Turbo10 study scored medoid structural/board F1 **0.9393/0
 
 *The left top should be lower. Generation flattens it; the reader faithfully compiles the mistake. Valid CAD does not mean correct reconstruction.*
 
-[All19 cases and scores](../../docs/m11-gallery.md) · [exact study](../../docs/m11-study.md) · [code and engineering decisions](https://github.com/Superpapotas/fabivo-boards)
+[Photo-to-CAD gallery and full 19-case scores](../../docs/m11-gallery.md) · [exact study](../../docs/m11-study.md) · [code and engineering decisions](https://github.com/Superpapotas/fabivo-boards)
 
 ## My notes
 

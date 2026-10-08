@@ -1,4 +1,6 @@
-# All 19 photo-to-CAD cases
+# Photo-to-CAD gallery
+
+17 visual examples are shown. Two cases were removed from the example gallery at the owner's request. The benchmark and full score table still include all 19 cases; no scores were removed or recomputed.
 
 Experimental m11 rank64 3000-EMA, Turbo10, resolution768, seeds0–3. The medoid picks one drawing by agreement among valid candidates, without gold labels. This is a reused gold diagnostic, not a test-selected production policy.
 
@@ -53,14 +55,6 @@ References retain third-party rights and are not CC BY or Apache assets. [Source
 ## 12 / real-console021
 
 ![Reference photograph, actual selected drawing and actual Fabivo CAD for real-console021.](../assets/comparisons/12-real-console021.png)
-
-## 13 / real-console028
-
-![Reference photograph, actual selected drawing and actual Fabivo CAD for real-console028.](../assets/comparisons/13-real-console028.png)
-
-## 14 / real-console032
-
-![Reference photograph, actual selected drawing and actual Fabivo CAD for real-console032.](../assets/comparisons/14-real-console032.png)
 
 ## 15 / real-console039
 

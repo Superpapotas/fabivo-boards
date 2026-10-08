@@ -6,9 +6,9 @@ A product photograph shows perspective, books, doors and shadows. A furniture ed
 
 ![The staggered console reference, the generated board drawing and its actual Fabivo CAD panels.](assets/comparisons/05-photo-staggered-console.png)
 
-*The stepped outline and partial shelf runs carry through to CAD. The reconstruction is not exact: this case scores 0.889 structural F1. Width, depth, thickness and finish are assigned defaults, not measurements from the photo. m11, Turbo10, four-seed medoid. [m11 weights are now released separately](https://huggingface.co/Superpapotas1/fabivo-boards-image-lora-m11); the m10 release is unchanged.*
+*The stepped outline and partial shelf runs carry through to CAD. The reconstruction is not exact: this case scores 0.889 structural F1. Width, depth, thickness and finish are assigned defaults, not measurements from the photo. m11, Turbo10, four-seed medoid. [m11 is the public model](https://huggingface.co/Superpapotas1/fabivo-boards-image-lora-m11). Earlier weights are kept privately; historical scores are retained.*
 
-**Read in depth:** [all 19 photo comparisons](docs/m11-gallery.md) · [method and code](docs/method.md) · [training / experiments](docs/experiments.md) · [scores](docs/m11-study.md) · [reproduction](docs/reproduction.md)
+**Read in depth:** [photo-to-CAD gallery](docs/m11-gallery.md) · [method and code](docs/method.md) · [training / experiments](docs/experiments.md) · [scores](docs/m11-study.md) · [reproduction](docs/reproduction.md)
 
 ## GPT Image 2.5 vs our fine-tuned model
 
@@ -40,13 +40,13 @@ The reader is part of the experiment. A reasonable-looking image with doubled ou
 
 *The left cabinet is shorter in the reference. The selected drawing raises it to the right cabinet’s height and aligns shelf levels. The CAD preserves that error; it does not repair it. This is a vision/topology failure, not a rendering defect. Structural F1 is 0.800 for this case: a high average does not mean every important board is right.*
 
-All 19 cases remain visible, in alphabetical order, with actual source photos, selected drawings and compiled documents. [Small per-case figures and full score table](docs/m11-gallery.md); [static HTML case page](docs/cases.html) can be opened locally.
+The gallery shows 17 cases in alphabetical order, with actual source photos, selected drawings and compiled documents. Two visual examples were removed at the owner's request; benchmark scores still include all 19 cases. [Small per-case figures and full score table](docs/m11-gallery.md); [static HTML case page](docs/cases.html) can be opened locally.
 
 ## What the results establish
 
 | Four-seed medoid | Test (53) structural / board F1 | Reused gold (19) structural / board F1 |
 |---|---:|---:|
-| Released m10, rank96, six inference steps | 0.9235 / 0.2721 | 0.9225 / 0.2111 |
+| Historical m10, rank96, six inference steps | 0.9235 / 0.2721 | 0.9225 / 0.2111 |
 | Released m11, rank64, six inference steps | 0.9137 / 0.2762 | 0.9141 / 0.2395 |
 | m11, later ten-step gold diagnostic | Not tested in this study | 0.9393 / 0.2524 |
 
@@ -85,7 +85,7 @@ Inference needs the licensed base, adapter, Turbo adapter for that path, depende
 
 ## Assets and rights
 
-[m11 image adapter](https://huggingface.co/Superpapotas1/fabivo-boards-image-lora-m11) · [m10 image adapter](https://huggingface.co/Superpapotas1/fabivo-boards-image-lora) · [VLM adapter](https://huggingface.co/Superpapotas1/fabivo-boards-vlm-9b) · [Annotations / approved procedural renders](https://huggingface.co/datasets/Superpapotas1/fabivo-furniture-boards)
+[m11 image adapter](https://huggingface.co/Superpapotas1/fabivo-boards-image-lora-m11) · [Annotations / approved procedural renders](https://huggingface.co/datasets/Superpapotas1/fabivo-furniture-boards)
 
 Software: Apache-2.0. Owner annotations and approved procedural renders: CC BY 4.0. Qwen-Image 2.1 and its LoRA: **non-commercial Qwen RESEARCH LICENSE AGREEMENT. Built with Qwen.** Qwen3.5-9B and its VLM adapter: Apache-2.0. These grants are not interchangeable.
 

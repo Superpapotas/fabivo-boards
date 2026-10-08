@@ -33,7 +33,7 @@ Each label starts with `box W H`. The longer side is normalized to 1000. Each bo
 
 The stepped outline and partial shelf runs carry through to CAD, but the reconstruction is not exact (structural F1 0.889). The CAD comes from the archived reader document, with no repaired geometry. Width 1200 mm, depth 350 mm, thickness 18 mm and finish are assigned defaults, not recovered measurements.
 
-[All 19 references, predictions and CAD outputs in fixed order](../../docs/m11-gallery.md). Prediction images are experimental m11, not ground truth or VLM output. **Reference photos are third-party material, all original rights retained; they are NOT CC BY 4.0 or Apache-2.0.** [Source pages and missing credits](../../docs/comparison-sources.md), [figure provenance](../../docs/figure-provenance.md). This documentation update does not change training/evaluation files or splits.
+[Photo-to-CAD gallery and full 19-case score table](../../docs/m11-gallery.md). Two visual examples were removed at the owner's request; the benchmark is unchanged. Prediction images are experimental m11, not ground truth or VLM output. **Reference photos are third-party material, all original rights retained; they are NOT CC BY 4.0 or Apache-2.0.** [Source pages and missing credits](../../docs/comparison-sources.md), [figure provenance](../../docs/figure-provenance.md). This documentation update does not change training/evaluation files or splits.
 
 ## Split and family counts
 

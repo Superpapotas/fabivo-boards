@@ -19,7 +19,7 @@ tags:
 
 This is the rank64 EMA adapter from `qwen21-m11-r64/ckpt-3000-ema`. It redraws a furniture carcass as an orthographic front elevation: solid black boards and white openings. It is an adapter, not a complete model. It does not infer real width, depth, thickness, hardware, hidden joints or safe construction.
 
-[Research and code](https://github.com/Superpapotas/fabivo-boards) · [Released m10](https://huggingface.co/Superpapotas1/fabivo-boards-image-lora) · [Annotations / approved procedural renders](https://huggingface.co/datasets/Superpapotas1/fabivo-furniture-boards) · [Fabivo](https://fabivo.com)
+[Research and code](https://github.com/Superpapotas/fabivo-boards) · [Annotations / approved procedural renders](https://huggingface.co/datasets/Superpapotas1/fabivo-furniture-boards) · [Fabivo](https://fabivo.com)
 
 ## GPT Image 2.5 vs Fabivo m11
 
@@ -30,6 +30,8 @@ This is the rank64 EMA adapter from `qwen21-m11-r64/ckpt-3000-ema`. It redraws a
 [All three paired examples and protocol](../../docs/gpt-image-comparison.md) · [Ten requested references and available results](../../docs/demo-examples.md) · [Browse the saved gallery](https://huggingface.co/spaces/Superpapotas1/fabivo-boards-demo)
 
 The gallery is static and has no live inference. ZeroGPU hosting was denied for this account; no paid fallback or GPU quota was used. Six requested inputs remain ungenerated.
+
+m11 is the project's only public model. Earlier m10 and VLM weights are kept privately, not deleted. Historical benchmark comparisons remain available.
 
 ## Exact weights and training
 

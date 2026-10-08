@@ -1,4 +1,4 @@
-"""Update documentation only in four EXISTING HF repositories.
+"""Update documentation only in the two EXISTING public HF repositories.
 
 Public targets require --allow-public. Repository visibility is unchanged.
 
@@ -13,9 +13,7 @@ import shutil
 from huggingface_hub import HfApi, CommitOperationAdd, CommitOperationDelete, hf_hub_download
 
 TARGETS = [
-    ('image', 'Superpapotas1/fabivo-boards-image-lora', 'model'),
     ('m11', 'Superpapotas1/fabivo-boards-image-lora-m11', 'model'),
-    ('vlm', 'Superpapotas1/fabivo-boards-vlm-9b', 'model'),
     ('dataset', 'Superpapotas1/fabivo-furniture-boards', 'dataset'),
 ]
 

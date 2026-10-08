@@ -18,6 +18,10 @@ auth.json
 # Standalone original-photo data stays excluded.
 !assets/figures/*.png
 !assets/comparisons/*.png
+# Reviewed public example photos and labeled GPT/m11 comparison figures.
+!assets/demo-examples/*.jpg
+!assets/gpt-comparison/*.jpg
+!assets/gpt-comparison/*.png
 data/
 weights/
 outputs/
